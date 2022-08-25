@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from pages.quotes_page import QuotesPage
 
-service = Service("/usr/local/bin/chromedriver")
+service = Service("C:\\Users\\satan\\Downloads\\chromedriver_win32\\chromedriver.exe")
 chrome = webdriver.Chrome(service=service)
 chrome.get("http://quotes.toscrape.com/search.aspx")
 page = QuotesPage(chrome)
